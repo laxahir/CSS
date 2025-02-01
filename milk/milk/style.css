@@ -1,0 +1,906 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+fonts {
+    font-family: "Playfair Display", serif;
+    font-family: "Roboto", sans-serif;
+    font-family: "Barlow Condensed", sans-serif;
+}
+
+/* start header */
+header {
+    width: 100%;
+    height: 80px;
+    border: 2px solid rgb(136, 136, 136);
+    background-color: white;
+    display: flex;
+    align-items: center;
+    position: relative;
+    /* position: sticky; */
+    top: 0px;
+    z-index: 1;
+}
+
+.logo {
+    margin: 10px;
+}
+
+.menu {
+    width: 700px;
+    height: 80px;
+    padding-top: 30px;
+    margin: 50px;
+}
+
+.menu ul li::after {
+    content: '';
+    margin: auto;
+    display: block;
+    width: 0%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: 0.5s;
+}
+
+.menu ul li:hover::after {
+    width: 100%;
+}
+
+a:hover {
+    color: rgb(255, 182, 24);
+}
+
+.home {
+    color: rgb(255, 182, 24);
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+ul li {
+    list-style: none;
+    margin: 15px;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+}
+
+ul li a {
+    text-decoration: none;
+    color: black;
+    width: 0%;
+}
+
+.fa-cart-plus {
+    position: absolute;
+    top: 25px;
+    font-size: 24px;
+    font-family: "Roboto", sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+.fa-cart-plus:hover {
+    color: rgb(255, 182, 24);
+}
+
+.cartabout {
+    position: absolute;
+    top: 25px;
+    margin-left: 40px;
+    font-size: 12px;
+    font-family: "Roboto", sans-serif;
+}
+
+/* end header */
+
+/* start section-1 */
+.first {
+    width: 100%;
+    height: 1400px;
+    position: relative;
+}
+
+.firstbg {
+    background-image: url(./img/home-1-slide-3.jpeg);
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: darken;
+    z-index: -1;
+}
+
+.milk {
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    font-size: 82px;
+    font-weight: 800;
+    word-spacing: 10px;
+    color: white;
+    font-family: "Playfair Display", serif;
+}
+
+.delivered {
+    position: absolute;
+    top: 30%;
+    right: 35%;
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    color: white;
+}
+
+.productsbtn {
+    width: 200px;
+    height: 50px;
+    background-color: rgb(255, 182, 24);
+    border: 1px solid rgb(255, 182, 24);
+    position: absolute;
+    top: 37%;
+    right: 40%;
+    font-size: 14px;
+    color: black;
+    font-family: "Roboto", sans-serif;
+}
+
+.productsbtn:hover {
+    background-color: transparent;
+    border: 2px solid white;
+    color: white;
+    transition: 0.6s;
+}
+
+.welcome {
+    background-image: url(./img/yellow_bg.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 300px;
+    position: relative;
+}
+
+.farm {
+    position: absolute;
+    left: 30%;
+    top: 20%;
+    font-size: 52px;
+    font-family: "Playfair Display", serif;
+}
+
+.cow1 {
+    position: absolute;
+    top: 43%;
+    left: 50%;
+    width: 35px;
+    height: 35px;
+}
+
+.one {
+    position: absolute;
+    top: 48%;
+    left: 33%;
+    height: 1px;
+    width: 200px;
+    background-color: black;
+}
+
+.cow1line2 {
+    position: absolute;
+    left: 54%;
+}
+
+.welcomeabout1 {
+    position: absolute;
+    top: 60%;
+    left: 24%;
+    font-size: 20px;
+    width: 850px;
+    height: 10px;
+}
+
+.welcomeabout2 {
+    position: absolute;
+    top: 68%;
+    left: 35%;
+    font-size: 20px;
+    width: 750px;
+    height: 10px;
+}
+
+.bigcow {
+    width: 250px;
+    height: 230px;
+    position: absolute;
+    top: 80%;
+    left: 40%;
+    animation-delay: 10s;
+}
+
+/* end section-1 */
+
+/* start section-2 */
+.second {
+    width: 100%;
+    height: 700px;
+    height: 700px;
+    position: relative;
+}
+
+.threeimgdiv {
+    width: 85%;
+    height: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.threeimg {
+    width: 350px;
+    height: 700px;
+}
+
+.ser1 {
+    background-image: url(./img/service1.jpeg);
+}
+
+.ser2 {
+    background-image: url(./img/service2.jpeg);
+}
+
+.ser3 {
+    background-image: url(./img/service3.jpeg);
+}
+
+.service {
+    width: 350px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.service:hover {
+    background-color: rgba(0, 0, 0, 0.333);
+    background-blend-mode: darken;
+    transition: 0.5s;
+}
+
+.our {
+    padding-top: 20px;
+    padding-left: 70px;
+    font-size: 34px;
+}
+
+.our:hover {
+    color: rgb(231, 158, 0);
+    transition: 0.5s;
+}
+
+.ourabout {
+    text-align: center;
+    padding-top: 33px;
+    color: rgb(108, 104, 104);
+}
+
+.ourbtn {
+    position: absolute;
+    top: 75%;
+    width: 200px;
+    height: 50px;
+    border: 1px solid rgb(255, 182, 24);
+    background-color: rgb(255, 182, 24);
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.ourbtn:hover {
+    background-color: rgb(255, 182, 24);
+    color: white;
+    transition: 0.5s;
+}
+
+.disbtn {
+    position: absolute;
+    left: 14%;
+}
+
+.viebtn {
+    position: absolute;
+    left: 42%;
+}
+
+.shobtn {
+    position: absolute;
+    left: 71%;
+}
+
+/* end section-2 */
+
+/* start section-3 */
+.third {
+    width: 100%;
+    height: 800px;
+    background-color: aqua;
+    background-image: url(./img/bg_fresh.jpeg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    position: relative;
+}
+
+.girl {
+    position: absolute;
+    top: 27%;
+    left: 62%;
+    width: 300px;
+    height: 300px;
+    background-image: url(./img/girl.png);
+    background-size: cover;
+}
+
+.fresh {
+    font-size: 58px;
+    color: rgb(255, 182, 24);
+    font-family: "Playfair Display", serif;
+    position: absolute;
+    top: 20%;
+    left: 17%;
+}
+
+.whitecow1 {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 29%;
+    left: 22.5%;
+}
+
+.whitecowline1 {
+    height: 1px;
+    width: 60px;
+    position: absolute;
+    top: 30.5%;
+    left: 17%;
+    background-color: white;
+}
+
+.whitecowline2 {
+    height: 1px;
+    width: 60px;
+    position: absolute;
+    top: 30.5%;
+    left: 25%;
+    background-color: white;
+}
+
+.family {
+    font-size: 36px;
+    font-family: "Playfair Display", serif;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 17%;
+}
+
+.freshparagraph {
+    width: 500px;
+    line-height: 20px;
+    font-size: 16px;
+    color: rgb(200, 200, 200);
+    position: absolute;
+    top: 57%;
+    left: 17%;
+}
+
+.freshbtn {
+    position: absolute;
+    top: 75%;
+    left: 17%;
+    width: 180px;
+    height: 50px;
+    border: 1px solid rgb(255, 182, 24);
+    background-color: transparent;
+    color: rgb(255, 182, 24);
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.freshbtn:hover {
+    color: black;
+    background-color: rgb(255, 182, 24);
+    transition: 0.5s;
+}
+
+/* end section-3 */
+
+/* startr section-4 */
+.fourth {
+    width: 100%;
+    height: 900px;
+    position: relative;
+}
+
+.Aboutus {
+    font-size: 52px;
+    font-weight: 800;
+    font-family: "Playfair Display", serif;
+    position: absolute;
+    top: 150px;
+    left: 45%;
+}
+
+.yellowcow1 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 210px;
+    left: 49%;
+}
+
+.yellowcowline1 {
+    height: 2px;
+    width: 82px;
+    position: absolute;
+    top: 230px;
+    left: 44%;
+    background-color: rgb(255, 182, 24);
+    border: 0px rgb(255, 182, 24);
+}
+
+.yellowcowline2 {
+    height: 2px;
+    width: 82px;
+    position: absolute;
+    top: 230px;
+    left: 52%;
+    background-color: rgb(255, 182, 24);
+    border: 0px rgb(255, 182, 24);
+}
+
+.yeardiv {
+    width: 80%;
+    height: 550px;
+    display: flex;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+
+.yearcow {
+    width: 100%;
+    height: 500px;
+    background-image: url(./img/cow_little.jpeg);
+    background-size: cover;
+}
+
+.year {
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 237, 186);
+}
+
+.yearbox {
+    width: 400px;
+    height: 30px;
+    padding-top: 15px;
+    border-radius: 50px 50px;
+    position: absolute;
+    top: 80px;
+    right: 10%;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgb(255, 224, 140);
+}
+
+.years {
+    width: 80px;
+    margin-top: -15px;
+    border-radius: 50px 50px;
+    position: relative;
+}
+
+.years:hover {
+    background-color: rgb(255, 208, 67);
+    transition: 0.7s;
+}
+
+.year1 {
+    background-color: rgb(255, 208, 67);
+}
+
+.firstyear {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    position: absolute;
+    top: 14px;
+    left: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.firstyear:hover {
+    color: black;
+}
+
+.yearstory {
+    font-family: "Playfair Display", serif;
+    font-size: 32px;
+    position: absolute;
+    top: 28%;
+    right: 260px;
+}
+
+.yearparagraph {
+    width: 300px;
+    text-align: center;
+    color: rgb(138, 138, 138);
+    position: absolute;
+    top: 40%;
+    right: 200px;
+}
+
+.yearbtn {
+    position: absolute;
+    top: 65%;
+    right: 17%;
+    width: 180px;
+    height: 50px;
+    border: 1px solid rgb(255, 182, 24);
+    background-color: rgb(255, 182, 24);
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.yearbtn:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+/* end section-4 */
+
+/* start section-5 */
+.fifth {
+    width: 100%;
+    height: 950px;
+    position: relative;
+}
+
+.pro {
+    font-size: 52px;
+    font-weight: 800;
+    font-family: "Playfair Display", serif;
+    position: absolute;
+    top: 150px;
+    left: 45%;
+}
+
+.yellowcow2 {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 210px;
+    left: 52.5%;
+}
+
+.yellowcowline3 {
+    height: 2px;
+    width: 82px;
+    position: absolute;
+    top: 230px;
+    left: 45%;
+    background-color: rgb(255, 182, 24);
+    border: 0px rgb(255, 182, 24);
+}
+
+.yellowcowline4 {
+    height: 2px;
+    width: 82px;
+    position: absolute;
+    top: 230px;
+    left: 56%;
+    background-color: rgb(255, 182, 24);
+    border: 0px rgb(255, 182, 24);
+}
+
+.fourproduct {
+    width: 80%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 300px;
+    right: 120px;
+}
+
+.product {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.product1 {
+    background-image: url(./img/img_milk.jpeg);
+    position: relative;
+}
+
+.pro1milk {
+    font-size: 38px;
+    font-family: "Playfair Display", serif;
+    position: absolute;
+    top: 230px;
+    right: 55px;
+}
+
+.pro1milk:hover {
+    color: rgb(255, 182, 24);
+    transition: 0.5s;
+}
+
+.por1paragraph {
+    width: 220px;
+    font-size: 16px;
+    text-align: center;
+    color: rgb(120, 120, 120);
+    position: absolute;
+    top: 310px;
+    right: 0px;
+}
+
+.product2 {
+    background-image: url(./img/img_cheese.jpeg);
+    position: relative;
+}
+
+.product3 {
+    background-image: url(./img/img_butter.jpeg);
+    position: relative;
+}
+
+.product4 {
+    background-image: url(./img/img_cream.jpeg);
+    position: relative;
+}
+
+.product4sbtn {
+    position: absolute;
+    top: 75%;
+    left: 39%;
+    width: 180px;
+    height: 50px;
+    border: 1px solid rgb(255, 182, 24);
+    background-color: rgb(255, 182, 24);
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.product4sbtn:hover {
+    color: white;
+    transition: 0.5s;
+}
+
+/* end section-5 */
+
+/* start footer */
+.footer {
+    width: 100%;
+    height: 900px;
+    background-color: aqua;
+}
+
+.footersection1 {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(255, 182, 24);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footerlogo {
+    height: 150px;
+    background-size: cover;
+}
+
+.footerlogo1 {
+    background-image: url(./img/1-1.png);
+    width: 140px;
+}
+
+.footerlogo2 {
+    background-image: url(./img/2-1.png);
+    width: 176px;
+}
+
+.footerlogo3 {
+    background-image: url(./img/3-1.png);
+    width: 156px;
+}
+
+.footerlogo4 {
+    background-image: url(./img/4-1.png);
+    width: 131px;
+}
+
+.footerlogo5 {
+    background-image: url(./img/5-1.png);
+    width: 120px;
+}
+
+.footersection2 {
+    width: 100%;
+    height: 800px;
+    background-color: rgb(34, 34, 34);
+    position: relative;
+}
+
+.wheretobuy {
+    padding-top: 30px;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.where {
+    font-size: 62px;
+    font-family: "Playfair Display", serif;
+    color: rgb(255, 182, 24);
+}
+
+.whereparagraph {
+    width: 400px;
+    font-size: 18px;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    color: rgb(255, 182, 24);
+}
+
+.wherebtn {
+    width: 180px;
+    height: 50px;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.wherebtn:hover {
+    border: 1px solid rgb(255, 182, 24);
+    color: rgb(255, 182, 24);
+    transition: 0.5s;
+}
+
+.whereline {
+    width: 80%;
+    height: 1px;
+    background-color: rgb(150, 150, 150);
+    border: rgb(150, 150, 150);
+    position: absolute;
+    top: 150px;
+    right: 127px;
+}
+
+.footermaindiv {
+    position: absolute;
+    top: 230px;
+    left: 140px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inthe {
+    font-size: 33px;
+    font-family: "Playfair Display", serif;
+    color: rgb(255, 182, 24);
+}
+
+ol {
+    display: block;
+    padding-top: 25px;
+
+}
+
+ol .fli {
+    list-style: none;
+}
+
+ol .fli .fa {
+    font-size: 16px;
+    font-weight: 100;
+    font-family: serif;
+    text-decoration: none;
+    line-height: 25px;
+    color: rgb(101, 101, 101);
+}
+
+ol .fli .fa:hover {
+    color: rgb(255, 182, 24);
+    transition: 0.5s;
+}
+
+.footerlastline {
+    width: 80%;
+    height: 1px;
+    background-color: rgb(150, 150, 150);
+    border: rgb(150, 150, 150);
+    position: absolute;
+    top: 520px;
+    right: 127px;
+}
+
+.footerlastdiv {
+    position: absolute;
+    top: 600px;
+    left: 135px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.lastcow {
+    width: 100px;
+    height: 100px;
+    background-image: url(./img/footer-logo.png);
+    background-size: cover;
+}
+
+.email {
+    color: rgb(101, 101, 101);
+}
+
+.phone {
+    color: rgb(255, 182, 24);
+}
+
+.info {
+    position: absolute;
+    top: 53px;
+    left: 448px;
+    color: rgb(255, 182, 24);
+}
+
+.lasticon {
+    position: absolute;
+    left: 800px;
+    width: 200px;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.twitter {
+    font-size: 22px;
+    color: rgb(0, 0, 0);
+    width: 40px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: rgb(255, 182, 24);
+    text-align: center;
+    padding-top: 8px;
+}
+
+.twitter:hover {
+    color: white;
+    background-color: rgb(234, 160, 0);
+    transition: 0.5s;
+}
+
+/* end footer */

@@ -1,0 +1,16 @@
+/* @media only screen and (min-width:1920px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+
+    }
+} */
+
+@media only screen and (min-width: 1400px) {
+    header {
+        width: 99.7%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
